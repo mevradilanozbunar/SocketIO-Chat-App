@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>Chat</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.7.4/socket.io.js"
+      integrity="sha512-tE1z+95+lMCGwy+9PnKgUSIeHhvioC9lMlI7rLWU0Ps3XTdjRygLcy4mLuL0JAoK4TLdQEyP0yOl/9dMOqpH/Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <div class="chat">
+      <div class="chat-title">
+        <input type="text" class="nickname-input" id="sender" placeholder="Nickname" />
+        <figure class="avatar">
+          <img
+            src="https://static.vecteezy.com/system/resources/thumbnails/009/292/244/small/default-avatar-icon-of-social-media-user-vector.jpg"
+            id="avatar" />
+        </figure>
+      </div>
+      <div class="messages">
+        <div class="messages-content" id="output"></div>
+        <div class="messages-feedback" id="feedback"></div>
+      </div>
+      <div class="message-box">
+        <input type="text" id="message" class="message-input" placeholder="Type message..." />
+        <button type="button" id="submitBtn" class="message-submit">Send</button>
+      </div>
+    </div>
+    <div class="bg"></div>
+
+    <script src="chat.js" charset="UTF-8"></script>
+  </body>
+</html>
