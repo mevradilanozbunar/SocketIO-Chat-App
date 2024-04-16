@@ -10,25 +10,25 @@ Bu projeyi yerel olarak çalıştırmak için şu adımları izleyin:
 1. Bu depoyu klonlayın:
 
    ```bash
-   git clone
+   git clone https://github.com/mevradilanozbunar/SocketIO-Chat-App.git
    ```
 
 2. Proje dizinine gidin:
 
    ```bash
-   cd socketio-chat-app
+   cd SocketIO-Chat-App
    ```
 
 3. Bağımlılıkları yükleyin:
 
    ```bash
-   yarn
+   npm install
    ```
 
 4. Sunucuyu başlatın:
 
    ```bash
-   nodemon server.js
+   nodemon index.js
    ```
 
 Sunucu varsayılan olarak 3000 portunda başlayacaktır.
